@@ -17,9 +17,7 @@ public class Course {
      */
     private String courseName;
 
-//    @OneToOne(fetch=FetchType.LAZY)
-//    @JoinColumn(name="courseNo")
-//    private Teacher teacher;
+
 
 
 }

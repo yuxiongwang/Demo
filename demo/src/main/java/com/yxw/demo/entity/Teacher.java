@@ -15,22 +15,12 @@ public class Teacher {
      * 教师姓名
      */
     private String teacherName;
-//    /**
-//     * 教师编号
-//     */
-//    private Long teacherNo;
+
     /**
      * 教师类型 0：普通老师，1：主任
      */
     private int status;
-//    /**
-//     * 课程类别
-//     */
-//    private String courseNo;
 
-//    @OneToOne
-////    @JoinColumn(name="courseNo")
-//    private Course course;
 
 
 
