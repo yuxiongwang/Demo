@@ -42,7 +42,7 @@ public class StudentController {
     public Result<Object> addStudent(@RequestBody Student studentDto){
         Student stu=studentService.findById(studentDto.getId());
         if(stu!=null){
-            log.info(Constant.EXIST);
+            log.info("该学生已存在..........");
             return ResultUtils.exist();
         }
         studentService.save(studentDto);

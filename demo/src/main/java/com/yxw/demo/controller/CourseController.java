@@ -26,7 +26,7 @@ public class CourseController {
     public Result<Object> addCourse(@RequestBody Course courseDto){
         Course course=courseService.getById(courseDto.getId());
         if(course!=null){
-            log.info(Constant.EXIST);
+            log.info("该学科已存在..........");
             return ResultUtils.exist();
         }
         courseService.save(courseDto);

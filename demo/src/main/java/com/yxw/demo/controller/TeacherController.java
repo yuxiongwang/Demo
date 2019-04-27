@@ -65,7 +65,7 @@ public class TeacherController {
     public Result<Object> addTeacher(@RequestBody Teacher teacherDto){
         Teacher teacher=teacherService.getById(teacherDto.getId());
         if(teacher!=null){
-            log.info(Constant.EXIST);
+            log.info("该教师已存在..........");
             return ResultUtils.exist();
         }
         teacherService.save(teacherDto);
